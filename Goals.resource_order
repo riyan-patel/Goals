@@ -17,6 +17,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_goal","order":1,"path":"objects/obj_goal/obj_goal.yy",},
+    {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"spr_goal","order":1,"path":"sprites/spr_goal/spr_goal.yy",},
+    {"name":"spr_wall","order":2,"path":"sprites/spr_wall/spr_wall.yy",},
   ],
 }

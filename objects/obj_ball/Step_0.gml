@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+gravity = 0;
+friction = 0.1;
 key_up  = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_space_hold = keyboard_check(vk_space);
@@ -9,9 +10,11 @@ key_space_release = keyboard_check_released(vk_space);
 
 
 
-if(key_up and !in_motion) {
+
+
+if(key_up and !in_motion and move_up) {
 	y -= 5;
-} else if (key_down and !in_motion) {
+} else if (key_down and !in_motion and move_down) {
 	y += 5;
 }
 
@@ -22,10 +25,24 @@ if (key_space_hold and !in_motion) {
     }
 }
 
-
+show_debug_message(curr_speed);
 
 if (key_space_release) {
 	motion_add(direction, curr_speed);
 	in_motion = true;
 	curr_speed = 0;
 }
+
+if (place_meeting(x, y - 1, obj_wall)){
+	move_up = false;
+} else {
+	move_up = true;
+}
+
+if (place_meeting(x, y + 1, obj_wall)){
+	move_down = false;
+} else {
+	move_down = true;
+}
+
+

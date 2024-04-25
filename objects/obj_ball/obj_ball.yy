@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_soccerBall",
+  "%Name":"obj_ball",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_soccerBall",
+  "name":"obj_ball",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -21,7 +21,7 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":false,
+  "physicsObject":true,
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_socceBall",
-    "path":"sprites/spr_socceBall/spr_socceBall.yy",
+    "name":"spr_ball",
+    "path":"sprites/spr_ball/spr_ball.yy",
   },
   "spriteMaskId":null,
   "visible":true,
