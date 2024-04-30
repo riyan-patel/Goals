@@ -33,16 +33,20 @@ if (key_space_release) {
 	curr_speed = 0;
 }
 
-if (place_meeting(x, y - 1, obj_wall)){
+
+// keep working on wall collions
+if (place_meeting(x, y - 1, obj_invwall)){
 	move_up = false;
 } else {
 	move_up = true;
 }
 
-if (place_meeting(x, y + 1, obj_wall)){
+
+if (place_meeting(x, y, obj_invwall)){
 	move_down = false;
 } else {
 	move_down = true;
 }
 
-
+show_debug_message(move_up);
+show_debug_message(move_down);

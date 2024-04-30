@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_invwall",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_invwall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_invwall",
+    "path":"sprites/spr_invwall/spr_invwall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
