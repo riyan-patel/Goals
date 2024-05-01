@@ -42,8 +42,9 @@ if (place_meeting(x, y - 1, obj_invwall)){
 }
 
 
-if (place_meeting(x, y, obj_invwall)){
+if (place_meeting(x, y + 1, obj_invwall)){
 	move_down = false;
+	move_up = true;
 } else {
 	move_down = true;
 }

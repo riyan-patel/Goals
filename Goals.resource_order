@@ -16,9 +16,15 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_control","order":4,"path":"objects/obj_control/obj_control.yy",},
     {"name":"obj_goal","order":1,"path":"objects/obj_goal/obj_goal.yy",},
     {"name":"obj_invwall","order":2,"path":"objects/obj_invwall/obj_invwall.yy",},
+    {"name":"obj_wall1","order":3,"path":"objects/obj_wall1/obj_wall1.yy",},
+    {"name":"rm_gameover","order":2,"path":"rooms/rm_gameover/rm_gameover.yy",},
+    {"name":"rm_win","order":3,"path":"rooms/rm_win/rm_win.yy",},
+    {"name":"rm_start","order":1,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"spr_goal","order":1,"path":"sprites/spr_goal/spr_goal.yy",},
     {"name":"spr_invwall","order":2,"path":"sprites/spr_invwall/spr_invwall.yy",},
+    {"name":"spr_wall1","order":3,"path":"sprites/spr_wall1/spr_wall1.yy",},
   ],
 }
