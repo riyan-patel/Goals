@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (global.gameover){
-	if(keyboard_check_pressed(vk_anykey)){
+if (global.gameover or global.gamewin){
+	if(keyboard_check_pressed(vk_enter)){
 		game_restart()
 	}
 }

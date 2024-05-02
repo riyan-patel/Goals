@@ -20,6 +20,22 @@ switch(room){
 		break;
 		
 		
-		// add win and gameover room and work on the text here.
+		// add win and gameover room and work on the text here
 		
+}
+
+if(global.gameover){
+	draw_set_halign(fa_middle);
+	draw_text_transformed_color(room_width / 2, room_height / 2, "Game Over", 3, 3, 0, c_red, c_red, c_red, c_red, 1);
+	draw_text_transformed_color(room_width / 2, room_height / 3 * 2, "Press enter to restart", 3, 3, 0, c_red, c_red, c_red, c_red, 1);
+	draw_set_halign(fa_left);
+}
+
+if(global.gamewin){
+	draw_set_halign(fa_middle);
+	draw_text_transformed_color(room_width / 2, room_height / 2, "You Win", 3, 3, 0, c_green, c_green, c_green, c_green, 1);
+	draw_text_transformed_color(room_width / 2, room_height / 3 * 2, "Press enter to restart", 3, 3, 0, c_green, c_green, c_green, c_green, 1);
+	draw_set_halign(fa_left);
+	
+	
 }

@@ -5,3 +5,5 @@ curr_speed = 3;
 in_motion = false;
 move_up = true;
 move_down = true;
+is_shoot = false;
+in_goal = false;

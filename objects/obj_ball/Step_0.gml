@@ -31,6 +31,7 @@ if (key_space_release) {
 	motion_add(direction, curr_speed);
 	in_motion = true;
 	curr_speed = 0;
+	is_shoot = true;
 }
 
 
@@ -49,5 +50,10 @@ if (place_meeting(x, y + 1, obj_invwall)){
 	move_down = true;
 }
 
-show_debug_message(move_up);
-show_debug_message(move_down);
+if(speed == 0 and is_shoot and !in_goal){
+	global.gameover = true;
+}
+
+if(in_goal){
+	global.gamewin = true;
+}
