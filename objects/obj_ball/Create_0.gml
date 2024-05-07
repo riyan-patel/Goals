@@ -7,3 +7,5 @@ move_up = true;
 move_down = true;
 is_shoot = false;
 in_goal = false;
+in = 0;
+global.maxspeed = 0;
