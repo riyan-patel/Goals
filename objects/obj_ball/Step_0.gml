@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 gravity = 0;
-friction = 0.1;
+
 key_up  = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);
 key_space_hold = keyboard_check(vk_space);
@@ -26,13 +26,14 @@ if (key_space_hold and !in_motion) {
 }
 
 show_debug_message(curr_speed);
-
+show_debug_message(speed);
 if (key_space_release) {
 	motion_add(direction, curr_speed);
 	in_motion = true;
 	curr_speed = 0;
 	is_shoot = true;
 }
+
 
 
 // keep working on wall collions
