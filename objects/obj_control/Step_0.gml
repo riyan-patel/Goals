@@ -13,3 +13,15 @@ if(keyboard_check_pressed(vk_enter)){
 			break;
 	}
 }
+
+if(keyboard_check_pressed(vk_right)){
+	with(obj_ball){
+		if(sprite_index == spr_ball and global.smallball > 0){
+			sprite_index = spr_smallball
+		} else {
+			sprite_index = spr_ball;
+			
+		}
+		
+	}
+}

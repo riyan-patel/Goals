@@ -51,8 +51,22 @@ if (place_meeting(x, y + 1, obj_invwall)){
 	move_down = true;
 }
 
-if(speed == 0 and is_shoot and !in_goal){
-	global.gameover = true;
+if(sprite_index == spr_smallball and is_shoot and speed == 0 and global.smallball > 0){
+	global.smallball -= 1;
+	instance_destroy()
+	instance_create_layer(96,288,"Instances", obj_ball);
+	
+	
+}
+
+if(sprite_index = spr_ball and speed == 0 and is_shoot and !in_goal){
+	if(global.ball <= 0){
+		global.gameover = true;
+	} else {
+		global.ball -= 1;
+		instance_destroy()
+		instance_create_layer(96,288,"Instances", obj_ball);
+	}
 }
 
 if(in_goal){
