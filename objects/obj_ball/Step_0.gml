@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description movement of both balls
 // You can write your code in this editor
 
 gravity = 0;
@@ -32,6 +32,9 @@ if (key_space_release) {
 	in_motion = true;
 	curr_speed = 0;
 	is_shoot = true;
+	if(sprite_index == spr_ball){
+		global.ball -= 1;
+	}
 }
 
 
@@ -60,15 +63,15 @@ if(sprite_index == spr_smallball and is_shoot and speed == 0 and global.smallbal
 }
 
 if(sprite_index = spr_ball and speed == 0 and is_shoot and !in_goal){
-	if(global.ball <= 0){
-		global.gameover = true;
-	} else {
-		global.ball -= 1;
+	if(global.ball > 0){
 		instance_destroy()
 		instance_create_layer(96,288,"Instances", obj_ball);
+		obj_goal.image_index = 0;
+	} else {
+		global.gameover = true;
 	}
 }
 
-if(in_goal){
+if(in_goal and room == rm_lvl4){
 	global.gamewin = true;
 }

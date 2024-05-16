@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description setting up variables
 // You can write your code in this editor
 
 friction = 0.07;

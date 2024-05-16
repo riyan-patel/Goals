@@ -13,6 +13,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_switch","path":"objects/obj_switch/obj_switch.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_doorclose","path":"objects/obj_doorclose/obj_doorclose.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_doorcopen","path":"objects/obj_doorcopen/obj_doorcopen.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_rotatingblock","path":"objects/obj_rotatingblock/obj_rotatingblock.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_ball",

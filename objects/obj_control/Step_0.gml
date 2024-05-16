@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description ball and room switching
 // You can write your code in this editor
 if (global.gameover or global.gamewin){
 	if(keyboard_check_pressed(vk_enter)){

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description collsions with outside walls
 // You can write your code in this editor
 
 if (speed != 0){
